@@ -17,7 +17,7 @@ public class UserService {
 
   public void saveAndSendMessage(String message) {
     try {
-      User user = userMapper.convertXmlToUser(message);
+      User user = userMapper.convertStringToUser(message);
       String response = userRepository.save(user);
       userRepository.sendMessage(response);
     } catch (Exception e) {
