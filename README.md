@@ -25,6 +25,10 @@ JSON Example or Injected message in Kafka Service
 	"name": "jonathan",
 	"email": "joe@kranio.io"
 }
-
-
 ```
+
+**_Tener en cuenta:_**
+
+- Para Utilizar el consumer de kafka, debes de crear el topico y tener un injector de mensajes kafka
+- Para ver los mensajes que se publican en AMQ debes de tener un consumidor de mensajes y agregarle el address de ejemplo que esta en el codigo
+- No estan implementados los Test, Manejo de errores, ni sistema de loggeo
